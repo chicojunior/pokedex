@@ -1,0 +1,69 @@
+.poke-card {
+  width: 100%;
+  background-color: #607D8B;
+	appearance: none;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+	&[class*="normal"] {
+		background-color: #A8A77A;
+	}
+	&[class*="fighting"] {
+		background-color: #BE322E;
+	}
+	&[class*="flying"] {
+		background-color: #A893ED;
+	}
+	&[class*="poison"] {
+		background-color: #9F449E;
+	}
+	&[class*="ground"] {
+		background-color: #DFBF6E;
+	}
+	&[class*="rock"] {
+		background-color: #B79F41;
+	}
+	&[class*="bug"] {
+		background-color: #A8B732;
+	}
+	&[class*="ghost"] {
+		background-color: #705A96;
+	}
+	&[class*="steel"] {
+		background-color: #B8B8CF;
+	}
+	&[class*="fire"] {
+		background-color: #EE803B;
+	}
+	&[class*="water"] {
+		background-color: #6A92ED;
+	}
+	&[class*="grass"] {
+		background-color: #7AC657;
+	}
+	&[class*="electric"] {
+		background-color: #F7CF43;
+	}
+	&[class*="psychic"] {
+		background-color: #F65B89;
+	}
+	&[class*="ice"] {
+		background-color: #9AD8D7;
+	}
+	&[class*="dragon"] {
+		background-color: #7043F4;
+	}
+	&[class*="dark"] {
+		background-color: #6F5849;
+	}
+	&[class*="fairy"] {
+		background-color: #FD6AD3;
+	}
+
+}

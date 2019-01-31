@@ -16,6 +16,10 @@ export class PokemonService {
     return this.http.get(this.apiPath).pipe(catchError(this.handleError))
   }
 
+  getByName(name: string): Observable<any[]> {
+    return this.http.get(this.apiPath + `/${name}`).pipe(catchError(this.handleError))
+  }
+
   private handleError(error: any): Observable<any> {
     console.log('ERRO NA REQUISIÇÃO -> ', error)
     return throwError(error)

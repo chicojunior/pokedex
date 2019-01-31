@@ -8,13 +8,20 @@ import { PokemonService } from '../shared/pokemon.service';
 })
 export class PokemonListComponent implements OnInit {
 
+  pokemonList: any[] = []
+
   constructor(private _service: PokemonService) { }
 
   ngOnInit() {
     this._service
       .getAll()
       .subscribe(
-        res => console.log(res),
+        (res: any) => {
+          console.log(res)
+          if (res.results) {
+            this.pokemonList = res.results
+          }
+        },
         err => console.error(err)
       )
   }
